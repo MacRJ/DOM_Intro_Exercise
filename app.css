@@ -1,4 +1,4 @@
-.selected { 
+.selected {
   font-weight: bold;
 }
 
@@ -9,8 +9,11 @@
 
 #ghosting {
   background-color: #ddd;
-}  
+}
 
 #resize {
   background-color: orange;
 }
+/*#essentials {
+  background-color: yellow;
+}*/
