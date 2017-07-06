@@ -29,3 +29,13 @@ $("#ghosting").hover(function(){
 );
 
 // question 7
+$("#resize").mousedown(function(){
+  $(event.target).css("width", "400px")
+})
+
+$("#reset").click(function(){
+  $("li").removeClass("selected");
+  $("img:first").attr("src", "images/panic.jpeg")
+})
+
+// question 8
