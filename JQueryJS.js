@@ -21,12 +21,9 @@ $("li").mousedown(function(){
 })
 
 // question 6
-$("#ghosting").hover(function(){
-  $(this).remove();
-}, function() {
-  $(this).add();
-}
-);
+$('#ghosting').mouseenter(function() {
+ $("#ghosting").remove();
+});
 
 // question 7
 $("#resize").mousedown(function(){
@@ -35,7 +32,17 @@ $("#resize").mousedown(function(){
 
 $("#reset").click(function(){
   $("li").removeClass("selected");
-  $("img:first").attr("src", "images/panic.jpeg")
+  $("img").attr("src", "images/panic.jpeg")
 })
 
 // question 8
+$(document).keypress(function(e){
+  if(e.keyCode >= 48 && e.keyCode <= 57){
+alert("I HATE NUMBERZZZ!")
+  }
+})
+
+// question 9
+// BONUS: If someone types the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code),
+// the page alerts "YOU ARE AN EVENT HANDLER GURUUUUUUUUU!"
+// UUDDLRLRBA
